@@ -3,3 +3,8 @@ Detect Cycle in a ll :
     double the speed of normal pointer. If later, they point to the same node then they are in a cycle as in a 
     linear list they would not have met. Value of a node can be same but the exact node pointer cannot be same.
 
+Recursive insertion in a ll :
+    
+
+Happy Number : 
+

@@ -9,7 +9,9 @@ class Node {
     }
 }
 
-public class detectCycle {
+public class LinkedListPractice {
+
+    // Detect cycle in a ll
     public static boolean hasCycle(Node head) {
         if(head == null) return false;
 
@@ -25,6 +27,37 @@ public class detectCycle {
 
         return false;
     }
+
+    // Recursive insertion of nodes in a ll
+    public static void recInsert(int val, int index) {
+        
+    }
+
+    // Happy Number
+
+    public static int getNext(int n) {
+        int num = 0;
+        while(n > 0) {
+            int digit = n % 10;
+            num += digit * digit;
+            n /= 10;
+        }
+        return num;
+    }
+
+    public static boolean isHappy(int n) {
+        int slow = n;
+        int fast = n;
+
+        do {
+            slow = getNext(slow);
+            fast = getNext(getNext(fast));
+        } while(slow != fast);
+
+        return slow == 1;
+    }
+
+
     public static void main(String[] args) {
         Node n1 = new Node(1);
         Node n2 = new Node(2);
@@ -43,6 +76,8 @@ public class detectCycle {
         
         System.out.println(hasCycle(n1));
 
+        System.out.println();
+        System.out.println(isHappy(121));
 
     }
 }
