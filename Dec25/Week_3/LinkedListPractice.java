@@ -8,6 +8,22 @@ class Node {
         this.next = null;
     }
 }
+class LeafNode {
+    int val;
+    LeafNode left;
+    LeafNode right;
+
+    LeafNode(int x) {
+        this.val = x;
+        this.left = null;
+        this.right = null;
+    }
+    LeafNode(int x, LeafNode a, LeafNode b) {
+        this.val = x;
+        this.left = a;
+        this.right = b;
+    }
+}
 
 public class LinkedListPractice {
 
@@ -33,8 +49,13 @@ public class LinkedListPractice {
         
     }
 
-    // Happy Number
+    // Max Depth
+    public static int maxDepth(LeafNode root) {
+        if(root == null) return 0;
+        return 1 + Math.max(maxDepth(root.left), maxDepth(root.right)); 
+    }
 
+    // Happy Number
     public static int getNext(int n) {
         int num = 0;
         while(n > 0) {
@@ -44,7 +65,6 @@ public class LinkedListPractice {
         }
         return num;
     }
-
     public static boolean isHappy(int n) {
         int slow = n;
         int fast = n;
@@ -55,6 +75,14 @@ public class LinkedListPractice {
         } while(slow != fast);
 
         return slow == 1;
+    }
+
+    // Same Tree
+    public static boolean isSame(LeafNode a, LeafNode b) {
+        if(a == null && b == null) return true;
+        if(a == null || b == null) return false;
+        if(a.val != b.val) return false;
+        return isSame(a.left, b.left) && isSame(a.right, b.right);
     }
 
 
