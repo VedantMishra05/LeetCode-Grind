@@ -85,6 +85,44 @@ public class LinkedListPractice {
         return isSame(a.left, b.left) && isSame(a.right, b.right);
     }
 
+    // Balanced Tree : My method
+    public static boolean isBalanced(LeafNode root) {
+        if(root == null) return true;
+
+        if(Math.abs(maxDepth(root.left) - maxDepth(root.right)) > 1) return false;
+
+        return isBalanced(root.left) && isBalanced(root.right);
+    }
+    // Balanced Tree : Optimal method
+    public static boolean balanced(LeafNode root) {
+        return height(root) != -1;
+    }
+    public static int height(LeafNode node) {
+        if(node == null) return 0;
+
+        int left = height(node.left);
+        if(left == -1) return -1;
+
+        int right = height(node.right);
+        if(right == -1) return -1;
+
+        if(Math.abs(left - right) > 1) return -1;
+
+        return 1 + Math.max(left, right);
+    }
+
+    // Symetric Tree
+    public static boolean isSymmetric(LeafNode root) {
+        if(root == null) return true;
+        return isMirror(root.left, root.right);
+    }
+    public static boolean isMirror(LeafNode left, LeafNode right) {
+        if(left == null && right == null) return true;
+        if(left == null || right == null) return false;
+        if(left.val != right.val) return false;
+        return isMirror(left.left, right.right) && isMirror(left.right, right.left); // opposite same hona chaiye
+    }
+
 
     public static void main(String[] args) {
         Node n1 = new Node(1);

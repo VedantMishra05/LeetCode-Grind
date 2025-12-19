@@ -20,8 +20,11 @@ Same Tree : Similarty of a tree
     Check if both the current nodes of both trees are same or not in value(number or null). If they are same and
     null true return true. If same and not null, run the same checks for the branch nodes. If different, return false.
 
-Balanced Binary Tree :
+Balanced Binary Tree : Depth of two subtrees never differ by more than '1'.
     My Soln:
     Optimal Soln:
 
 Symmetric Tree :
+
+
+Minimum Depth of Binary Tree : 
