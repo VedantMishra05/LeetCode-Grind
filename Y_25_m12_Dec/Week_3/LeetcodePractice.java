@@ -1,4 +1,4 @@
-package Dec25.Week_3;
+package Y_25_m12_Dec.Week_3;
 class Node {
     int val;
     Node next;
@@ -25,7 +25,7 @@ class LeafNode {
     }
 }
 
-public class LinkedListPractice {
+public class LeetcodePractice {
 
     // Detect cycle in a ll
     public static boolean hasCycle(Node head) {
@@ -121,6 +121,15 @@ public class LinkedListPractice {
         if(left == null || right == null) return false;
         if(left.val != right.val) return false;
         return isMirror(left.left, right.right) && isMirror(left.right, right.left); // opposite same hona chaiye
+    }
+
+    // Minimum Depth of Binary Tree : Queue Method.
+    public static int minDepth(LeafNode root) {
+        if(root == null) return 0;
+
+        int depth = 0;
+
+        return depth;
     }
 
 
