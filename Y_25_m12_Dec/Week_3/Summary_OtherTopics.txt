@@ -1,3 +1,9 @@
 Set Mismatch : Return an array of duplicate and missing elements
     Count Sort Approach: 
-    Boolean array approach: 
+    Boolean array approach:
+
+Binary Search on 2D arrays :
+
+Concatenate the array :
+
+Shuffle the array :

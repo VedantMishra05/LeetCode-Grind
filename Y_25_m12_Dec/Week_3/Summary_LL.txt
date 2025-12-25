@@ -10,3 +10,12 @@ Happy Number : Square of Digits eventually equal to 1
     Ek function to alag se hoga hi, square of digits nikalne ke liye. Isse agla num milega. Use floyd's algo.
     If fast pointer is equal to the slow pointer, then values are repeating and we are repeating in a loop, so 
     then we compare if we are repeating at value '1'. If yes then 'OK' or else.
+
+Middle of a ll :
+    we
+
+Reverse a ll :
+    m
+
+Add Two Numbers:
+    m

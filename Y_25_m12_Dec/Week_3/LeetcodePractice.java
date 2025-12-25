@@ -132,6 +132,32 @@ public class LeetcodePractice {
         return depth;
     }
 
+    public static boolean binaryOn2D(int[][] matrix, int target) {
+        return false;
+    }
+
+    // Get concatenation of an array two times in another array
+    public int[] getConcatenation(int[] nums) {
+        int[] ans = new int[2 * nums.length];
+
+        // implemented in native code (c/c++) so faster than usual
+        System.arraycopy(nums, 0, ans, 0, nums.length); // first half
+        System.arraycopy(nums, 0, ans, nums.length, nums.length); // second half
+        
+        return ans;
+    }
+
+    // arr = {x1, x2, y1, y2}; ans = {x1, y1, x2, y2};
+    public int[] shuffle(int[] nums, int n) {
+        int[] ans = new int[2 * n];
+        int index = 0;
+        for(int i = 0; i < n; i++) {
+            ans[index++] = nums[i];
+            ans[index++] = nums[i + n];
+        }
+        return ans;
+    }
+
 
     public static void main(String[] args) {
         Node n1 = new Node(1);
