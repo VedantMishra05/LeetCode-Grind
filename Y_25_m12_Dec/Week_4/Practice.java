@@ -56,6 +56,18 @@ public class Practice {
         node.next = node.next.next;
     }
 
+    // Intersection of two linked lists - return intersecting node
+    private Node areIntersecting(Node headA, Node headB) {
+        Node a = headA;
+        Node b = headB;
+
+        while(a != b) {
+            a = (a == null) ? headB : a.next;
+            b = (b == null) ? headA : b.next;
+        }
+        return a;
+    }
+
     public static void main(String[] args) {
         
     }
