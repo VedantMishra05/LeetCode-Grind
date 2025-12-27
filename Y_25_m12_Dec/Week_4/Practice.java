@@ -1,8 +1,10 @@
 package Y_25_m12_Dec.Week_4;
 import java.util.*;
 
+import Y_25_m12_Dec.Week_4.PracticeLinkedList.Node;
+
 @SuppressWarnings("unused")
-public class StackPractice {
+public class Practice {
 
     // Game of Stack (HackerRank)
     private int maxMoves(Stack<Integer> a, Stack<Integer> b, int moves, int currSum, int maxSum) {
@@ -46,6 +48,12 @@ public class StackPractice {
         }
         
         return moves;
+    }
+
+    // Delete the given node in the argument - given is not the tail.
+    private void delete(Node node) {
+        node.data = node.next.data;
+        node.next = node.next.next;
     }
 
     public static void main(String[] args) {

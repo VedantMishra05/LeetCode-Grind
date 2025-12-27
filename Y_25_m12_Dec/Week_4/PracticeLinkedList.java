@@ -33,6 +33,12 @@ public class PracticeLinkedList {
         return TAIL.data;
     }
 
+    public int get(int idx) {
+        int value = -1;
+
+        return value;
+    }
+
     void insertLast(int value) {
         if (HEAD == null) {
             insertFirst(value);
@@ -56,12 +62,12 @@ public class PracticeLinkedList {
     }
 
     void insertAtPosition(int value, int position) {
-        if (position == 0) {
-            insertFirst(value);
-            return;
-        }
         if (position < 0 || position > SIZE) {
             System.out.println("Invalid Request");
+            return;
+        }
+        if (position == 0) {
+            insertFirst(value);
             return;
         }
         if (SIZE == position) {
@@ -109,7 +115,7 @@ public class PracticeLinkedList {
         }
         if (HEAD.next == null) {
             System.out.println("Removed head '" + HEAD.data + "' of the list.");
-            HEAD = null;
+            HEAD = TAIL = null;
             SIZE--;
             return;
         }
