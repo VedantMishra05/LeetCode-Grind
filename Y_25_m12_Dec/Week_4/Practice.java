@@ -68,6 +68,11 @@ public class Practice {
         return a;
     }
 
+    // Power of two - it has only 1 bit in binary
+    private boolean isPowerOfTwo(int n) {
+        return n > 0 && (n & (n - 1)) == 0;
+    }
+
     public static void main(String[] args) {
         
     }

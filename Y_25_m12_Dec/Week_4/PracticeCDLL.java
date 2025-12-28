@@ -14,4 +14,18 @@ public class PracticeCDLL {
             this.data = data;
         }
     }
+
+    public int getHead() {
+        if(head == null) return 0;
+        return head.data;
+    }
+    
+    public int getTail() {
+        if(tail == null) return 0;
+        return tail.data;
+    }
+    
+    public int getSize() {
+        return size;
+    }
 }
