@@ -73,6 +73,26 @@ public class Practice {
         return n > 0 && (n & (n - 1)) == 0;
     }
 
+    // Longest palindrome - return length of longest palindrome
+    public int longestPalindrome(String s) {
+        int[] freq = new int[128];
+        for(char c: s.toCharArray()) {
+            freq[c]++;
+        }
+
+        int length = 0;
+        boolean hasOdd = false;
+
+        for(int count: freq) {
+            if(count % 2 == 0) {
+                length += count;
+            } else {
+                length += count - 1;
+            }
+        }
+        return hasOdd ? length + 1 : length;
+    }
+
     public static void main(String[] args) {
         
     }
