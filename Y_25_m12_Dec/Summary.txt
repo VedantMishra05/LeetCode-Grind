@@ -5,15 +5,15 @@ Topics Covered :
         - Happy Number
         - Find Middle of Linked List
         - Reverse a Linked List
+        - Reverse Nodes in k-Group
+        - Rotate List
+        - Intersection of Two Linked Lists
+        - Remove Nth Node From End of List
+        - Add Two Numbers
+        - Merge Two Sorted Lists
         # - Check if Linked List is Palindrome
-        # - Merge Two Sorted Lists
-        # - Reverse Nodes in k-Group
-        # - Remove Nth Node From End of List
-        # - Intersection of Two Linked Lists
-        # - Rotate List
         # - Reorder List
         # - Merge k Sorted Lists
-        # - Add Two Numbers
         # - Swap Nodes in Pairs
         # - Flatten a Multilevel Doubly Linked List
         # - Copy List with Random Pointer

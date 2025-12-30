@@ -20,3 +20,21 @@ Length of largest palindrome :
     characters, we add the count (both will be part of palindrome). If we have odd no.of characters, then we 
     add one less count (ek kam karne ke baad even ho gaya na), and change hasOdd to true. 
     Last me add '1' for the center character.
+
+Rotate Linked List : k times
+    e
+
+Reverse Linked List 2 : reverse between left and right
+    tail
+
+Partition List : given value se chota piche and bada aage
+    e
+
+Remove nth node from end of List : 
+    e
+
+Merge two sorted List : 
+    e
+
+Delete the middle node of a linked List : 
+    e
