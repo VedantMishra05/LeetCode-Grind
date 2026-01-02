@@ -9,11 +9,19 @@ Same Tree : Similarty of a tree
 
 Balanced Binary Tree : Depth of two subtrees never differ by more than '1'.
     My Soln:
+        I just check the max depth of left and right nodes constantly. If their difference is greater than '1' then false.
     Optimal Soln:
+        Almost same hai, but, mere waale me ham top level tak calculate kar rahe the. Isme niche se hi calculate karte aa 
+        raha hai. Agar difference kahi -1 aaya to return aur kisi ka value aaya -1 to return. No extra calculation. Agle
+        call me 1 + dono me se max . '1 + ' isliye kyuki height badhana hai na. 
 
-Symmetric Tree :
+Symmetric Tree : Mirror nodes
+    From root node, compare left and right nodes. If both left and right are null, then okay. If either of them is null 
+    then bad or if both their values are not same then also bad. If eveery condition is right, their value is same and 
+    their are more nodes. So compare, left.left with right.right (mirror) and vice versa.
 
-
-Minimum Depth of Binary Tree : 
+Minimum Depth of Binary Tree : Using Queues         [ CODE BACHA HAI LIKHNA ]
+    We use a queue and offer the root node. While the queue is not empty, we offer all available child nodes (after checking)
+    and increase depth every iteration. If both child nodes are null, we return depth. Node node = queue.poll();
 
 Lowest Common Ancestor :

@@ -12,10 +12,15 @@ Happy Number : Square of Digits eventually equal to 1
     then we compare if we are repeating at value '1'. If yes then 'OK' or else.
 
 Middle of a ll :
-    we
+    Take two pointers ( slow and fast ), and make them traverse the list. Fast travels two times slow. So when 
+    fast reaches end, low is halfway there ( middle ).
 
 Reverse a ll :
-    m
+    Well, for this we need three pointers. Initially prev is null and curr is at head. Then, we traverse curr 
+    over the LL ( creating next node [ next = curr.next ]) until it is null( prev is at the last[now first] node). 
+    Logic: connect curr to prev, prev becomes curr and curr becomes next.
 
 Add Two Numbers:
-    m
+    Two LL heads given(at ones place of the digit). Well, add both nodes and then '%' 10 to get value and add to 
+    the total value of node. '/' by 10 to get the carry value. If in the end carry is not zero, then add a node 
+    with the left value.

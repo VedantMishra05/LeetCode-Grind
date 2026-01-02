@@ -3,7 +3,16 @@ Set Mismatch : Return an array of duplicate and missing elements
     Boolean array approach:
 
 Binary Search on 2D arrays :
+    This is applied on a matrix and it is very similar, we just have to calculate the row and column 
+    of the calculated mid. For row = mid / n; and for col = mid % n; ( makes sense ). We divide by 
+    the number of columns.
 
 Concatenate the array :
+    First, the most basic step is to initiate a double sized array. Then, we iterate over the array 
+    once and put the values in 'i' and 'i + n'.
+    Better : Use System.arraycopy(array, starting, intended, starting, totalLength); two times.
+             once '0' and num.length. While copy length is nums.length.
 
 Shuffle the array :
+    Given 'n' is nums.length / 2; So, we create a double sized array and input nums[i] and nums[i + n] 
+    elements by in the new array one after another with the help of incrementing variable 'index'.

@@ -38,3 +38,15 @@ Merge two sorted List :
 
 Delete the middle node of a linked List : 
     e
+
+Reorder List : 
+    e
+
+Insertion sort in Linked List : 
+    e
+
+Swap nodes in a Linked List : 
+    e
+
+Remove smaller nodes in a Linked List : iske baad bas larger -> smaller hona chaiye ( no reordering )
+    e

@@ -1,0 +1,32 @@
+Topics Covered :
+    1. Linked List:
+        # - Check if Linked List is Palindrome
+        # - Merge k Sorted Lists
+        # - Swap Nodes in Pairs
+        # - Flatten a Multilevel Doubly Linked List
+        # - Copy List with Random Pointer
+        # - LRU Cache Implementation
+    
+    2. Binary Trees (basic - intermediate)
+    #     - Path Sum
+    #     - Binary Tree Paths
+    #     - Sum Root to Leaf Numbers
+    #     - Construct Binary Tree from Preorder and Inorder Traversal
+    #     - Construct Binary Tree from Inorder and Postorder Traversal
+    #     - Validate Binary Search Tree
+    #     - Convert Sorted Array to Binary Search Tree
+
+    3. Binary Trees (advanced)
+    #     - Serialize and Deserialize Binary Tree
+    #     - Populating Next Right Pointers in Each Node
+    #     - Binary Tree Maximum Path Sum
+    #     - Recover Binary Search Tree
+    #     - Count Complete Tree Nodes
+    #     - Flatten Binary Tree to Linked List
+    #     - Lowest Common Ancestor of a Binary Tree
+    #     - Unique Binary Search Trees
+    #     - Unique Binary Search Trees II
+    #     - Construct Binary Search Tree from Preorder Traversal
+    #     - Delete Node in a BST
+    #     - Trim a Binary Search Tree
+    #     - Kth Smallest Element in a BST   
