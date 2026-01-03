@@ -36,6 +36,11 @@ Below is a running log of my thoughts, struggles, and improvements each month.
       and Binary Trees. For now, I will move on to practice Backtracking and Graphs next month.
     Problem of the month: **Largest Rectangle in Histogram**
 
+- ### Jan 2025:
+      Before: During this month, I plan on mastering binary trees. I am done with linked list (!hard questions).
+              For the first time, I will be making notes (Studying from TUF). Completed KK's playlist.
+    Problem of the month: **Largest Rectangle in Histogram**
+
 ---
 
 ##  Long-term Goal
