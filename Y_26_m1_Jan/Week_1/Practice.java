@@ -29,4 +29,9 @@ public class Practice {
 
         return 0;
     }
+
+    public int repeatedNTimes(int[] arr) { // Element repeated N times in a 2N size array.
+
+        return -1;
+    }
 }

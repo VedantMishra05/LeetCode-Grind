@@ -2,9 +2,9 @@ package Y_25_m12_Dec.Week_4;
 
 // Take you forward..
 public class PracticeLinkedList {
-    private Node HEAD = null;
-    private Node TAIL = null;
-    private int SIZE = 0;
+    private static Node HEAD = null;
+    private static Node TAIL = null;
+    private static int SIZE = 0;
 
     class Node {
         int data;
@@ -168,8 +168,7 @@ public class PracticeLinkedList {
         for(int x: arr) insertLast(x);
     }
 
-    @Override
-    public String toString() {
+    public static String toString(Node HEAD) {
         Node temp = HEAD;
         while (temp != null) {
             if(temp == HEAD) System.out.print(temp.data + " (HEAD) -> ");
@@ -180,7 +179,7 @@ public class PracticeLinkedList {
         System.out.println();
         System.out.println("The size of the current list is: " + SIZE);
         System.out.println();
-        return super.toString();
+        return "";
     }
 
     public static void main(String[] args) {

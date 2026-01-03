@@ -6,6 +6,35 @@ import Y_25_m12_Dec.Week_4.PracticeLinkedList.Node;
 @SuppressWarnings("unused")
 public class Practice {
 
+    class Node {
+        int data;
+        Node next;
+        Node(int data) {
+            this.data = data;
+            this.next = null;
+        }
+    }
+
+    // Valid Sudoku
+    public boolean validSudoku(int[][] matrix) {
+
+        return true;
+    }
+
+    // Queue using stacks..
+    Stack<Integer> a = new Stack<>();
+    Stack<Integer> b = new Stack<>();
+    private void offer(int val) {
+        a.push(val);
+    }
+    private int poll() {
+        if(a.isEmpty() && b.isEmpty()) throw new IllegalStateException("Queue is empty.");
+        if(b.isEmpty()) {
+            while(!a.isEmpty()) b.push(a.pop());
+        }
+        return b.pop();
+    }
+
     // Game of Stack (HackerRank)
     private int maxMoves(Stack<Integer> a, Stack<Integer> b, int moves, int currSum, int maxSum) {
         if(currSum > maxSum) return moves - 1;
@@ -48,6 +77,11 @@ public class Practice {
         }
         
         return moves;
+    }
+
+     // Game of Life
+    public void gameOfLife(int[][] board) {
+        
     }
 
     // Delete the given node in the argument - given is not the tail.
@@ -93,7 +127,88 @@ public class Practice {
         return hasOdd ? length + 1 : length;
     }
 
-    public static void main(String[] args) {
+    // Rotate Linked List by k
+    public static Node rotateRight(Node head, int k) {
+        if(head == null) return head;
+
+        int size = 1;
+        Node tail = head;
+        while(tail.next != null) { tail = tail.next; size++; }
+
+        k = k % size; 
+        Node newTail = head;
+        if(k == 0) return head;
+        for(int i = 0; i < size - k - 1; i++) newTail = newTail.next;
+
+        tail.next = head;
+        Node newHead = newTail.next;
+        newTail.next = null;
         
+        return newHead;
+    }
+
+    // Reverse Linked List II - reverse between left and right
+    public Node reverseBetween(Node head, int left, int right) {
+        if(head == null) return head;
+
+        Node dummy = new Node(0);
+        dummy.next = head;
+
+        Node prev = dummy;
+        for(int i = 1; i < left; i++) prev = prev.next;
+        Node curr = prev.next;
+
+        for(int i = 0; i < right - left; i++) {
+            Node next = curr.next;
+            curr.next = next.next;
+            next.next = curr;
+            prev.next = next;
+        }
+        return dummy.next;
+    }
+
+    // Partition List
+    public Node partition(Node head, int x) {
+
+        return head;
+    }
+
+    // Remove nth node from end
+    public Node removeNthFromEnd(Node head, int n) {
+        return head;
+    }
+
+    // Merge two sorted lists
+    public Node mergeTwoLists(Node l1, Node l2) {
+        return l1;
+    }
+
+    // Delete the middle node of a linked list
+    public Node deleteMiddle(Node head) {
+        return head;
+    }
+
+    // Reorder list
+    public void reorderList(Node head) {
+        // placeholder
+    }
+
+    // Insertion sort in linked list
+    public Node insertionSortList(Node head) {
+        return head;
+    }
+
+    // Swap nodes in a linked list
+    public Node swapNodes(Node head, int k) {
+        return head;
+    }
+
+    // Remove smaller nodes in a linked list
+    public Node removeSmallerNodes(Node head) {
+        return head;
+    }
+
+    public static void main(String[] args) {
+        PracticeLinkedList list = new PracticeLinkedList();
     }
 }

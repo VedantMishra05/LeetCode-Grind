@@ -1,19 +1,24 @@
 Valid Sudoku :
 
 Queue using Stacks :
+    Use two stacks. Push into stack 'a' and always pop from stack 'b'. If b is empty, then empty a into b.
 
 Game of Two Stacks : 
     Backtracking: 
     Prefix Sum: 
 
 Game of Life :
+    e
 
 Detele given node :
     Well, it is not complicated. We just copy the data of the next node and then skip the next node. Creating an 
     illusion that we deleted the given (provided that the given node is not the tail node).
 
 Intersection of two linked lists :
-    We are given two linked list's heads. 
+    We are given two linked list's heads. And both are traversed at same speed, until 'm + n" times. As until then 
+    they should have found the intersecting node ( their values are same ). [ m + n = n + m ]
+
+Power of Two :
 
 Length of largest palindrome : 
     For this we just have to store the frequency of every character in the given string. If we have even no.of 
@@ -22,10 +27,11 @@ Length of largest palindrome :
     Last me add '1' for the center character.
 
 Rotate Linked List : k times
-    e
+    Logic: new tail will be at ' size - k - 1 '. This will happen when you want to rotate right. You got the 
+    new tail and new head. Just remember to break the cycle.
 
 Reverse Linked List 2 : reverse between left and right
-    tail
+    e
 
 Partition List : given value se chota piche and bada aage
     e
