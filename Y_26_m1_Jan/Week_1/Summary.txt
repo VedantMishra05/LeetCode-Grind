@@ -19,3 +19,5 @@ Largest Even Number :
 Maximum pdt of splitted BT :
     e
 
+Max Dot Product of Two Subsequences :
+    e
