@@ -3,3 +3,7 @@ Smallest subtree with the deepest nodes :
 
 Minimum ASCII Delete Sum for Two Strings :
     e
+
+Maximal Rectangle :
+    e
+
