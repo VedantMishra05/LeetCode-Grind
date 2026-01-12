@@ -7,3 +7,11 @@ Minimum ASCII Delete Sum for Two Strings :
 Maximal Rectangle :
     e
 
+Diameter of BT : 
+    e
+
+BT ZigZag Level order traversal : 
+    e
+
+Minimum time visiting all points : 
+    e
