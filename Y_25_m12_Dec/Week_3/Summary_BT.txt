@@ -23,5 +23,3 @@ Symmetric Tree : Mirror nodes
 Minimum Depth of Binary Tree : Using Queues         [ CODE BACHA HAI LIKHNA ]
     We use a queue and offer the root node. While the queue is not empty, we offer all available child nodes (after checking)
     and increase depth every iteration. If both child nodes are null, we return depth. Node node = queue.poll();
-
-Lowest Common Ancestor :

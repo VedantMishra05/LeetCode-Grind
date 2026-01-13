@@ -2,9 +2,9 @@ package Y_25_m12_Dec.Week_4;
 
 // Take you forward..
 public class PracticeLinkedList {
-    private static Node HEAD = null;
-    private static Node TAIL = null;
-    private static int SIZE = 0;
+    private Node HEAD = null;
+    private Node TAIL = null;
+    private int SIZE = 0;
 
     class Node {
         int data;
@@ -36,6 +36,18 @@ public class PracticeLinkedList {
     public int get(int idx) {
         int value = -1;
 
+        if(idx < 0 || idx > SIZE - 1) throw new IndexOutOfBoundsException("Invalid index");
+        else if(idx == 0) value = HEAD.data;
+        else if(idx == SIZE - 1) value = TAIL.data;
+        else {
+            int i = 0;
+            Node temp = HEAD;
+            while(i < idx) {
+                temp = temp.next;
+                i++;
+            }
+            return temp.data;
+        }
         return value;
     }
 
@@ -158,8 +170,8 @@ public class PracticeLinkedList {
         }
         System.out.println("Removed " + temp.next.data + " from the list.");
         temp.next = temp.next.next;
-        toString();
         SIZE--;
+        toString();
     }
 
     public void convert(int[] arr) {
@@ -168,7 +180,13 @@ public class PracticeLinkedList {
         for(int x: arr) insertLast(x);
     }
 
-    public static String toString(Node HEAD) {
+    public void reverse() {}
+    public boolean hasCycle() {
+        return false;
+    }
+
+    @Override
+    public String toString() {
         Node temp = HEAD;
         while (temp != null) {
             if(temp == HEAD) System.out.print(temp.data + " (HEAD) -> ");
@@ -194,9 +212,15 @@ public class PracticeLinkedList {
         list.insertLast(5);
         list.insertAtPosition(4, 4);
         list.toString();
-
+        
+        System.out.println(list.get(0));
+        list.toString();
+        
         list.removeFirst();
         
         list.removeLast();
+        
+        System.out.println(list.get(0));
+        list.toString();
     }
 }
