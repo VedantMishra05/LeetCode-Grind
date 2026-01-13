@@ -15,3 +15,6 @@ BT ZigZag Level order traversal :
 
 Minimum time visiting all points : 
     e
+
+Seperate squares : 
+    e
