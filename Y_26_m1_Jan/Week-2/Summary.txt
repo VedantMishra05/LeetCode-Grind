@@ -18,6 +18,3 @@ Minimum time visiting all points :
 
 Seperate squares : 
     e
-
-Seperate squares 2 : 
-    e

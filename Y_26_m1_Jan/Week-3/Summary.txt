@@ -1,0 +1,11 @@
+Seperate squares 2 : 
+    e
+
+Maximize area of square hole in a grid :
+    e
+
+Maximum square area by removing fences from a field :
+    e
+
+Largest Area of Square Inside Two Rectangles :
+    e
